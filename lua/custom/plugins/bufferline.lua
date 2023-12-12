@@ -1,0 +1,27 @@
+return {
+ -- require ('bufferline').setup {
+ --    options = {
+ --      offsets = {
+ --        {
+ --          filetype = 'NvimTree',
+ --          text='Nvim Tree',
+ --          text_align='center',
+ --          highlight='Directory',
+ --        }
+ --      },
+ --      diagnostics = 'nvim_lsp',
+ --      modified_icon = '●',
+ --      mode = 'buffers',
+ --      style_preset = {
+ --        'bufferline.style_preset.minimal',
+ --      },
+ --      separator_style = 'slant'
+ --    },
+ --    highlights = {
+ --      fill = {
+ --        fg = '#191724',
+ --        bg = '#1f1d2e',
+ --      },
+ --    }
+ --  }
+}
