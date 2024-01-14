@@ -174,8 +174,8 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs'} },
-  phpactor= {},
-  emmet_ls = {},
+  phpactor= { filetypes = {'php'} },
+--  emmet_ls = {},
   marksman = {},
   volar = {
     filetypes = { 'vue', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' }
