@@ -14,7 +14,14 @@ return {
     end
   },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "lukas-reineke/indent-blankline.nvim" },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {
+      indent = { char = '┊' },
+      scope = { enabled = false }
+    },
+  },
   { "akinsho/toggleterm.nvim", config = true },
   { "windwp/nvim-ts-autotag",  opts = {} },
   {
@@ -41,7 +48,7 @@ return {
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'catppuccin',
+        theme = 'moonfly',
         component_separators = '|',
         section_separators = '',
       },
@@ -51,8 +58,8 @@ return {
         lualine_c = {{
           'filename',
           file_status = true, -- displays file status (readonly status, modified status)
-              path = 1 -- relative path
-          }},
+          path = 1 -- relative path
+        }},
         lualine_x = {'encoding', 'fileformat', 'filetype'},
         lualine_y = {'progress'},
         lualine_z = {'location'}
@@ -60,7 +67,7 @@ return {
     },
   },
   -- {'akinsho/bufferline.nvim', version = "1", dependencies = 'nvim-tree/nvim-web-devicons'},
---  {"lukas-reineke/indent-blankline.nvim"},
+  --  {"lukas-reineke/indent-blankline.nvim"},
   -- "gc" to comment visual regions/lines
   { "numToStr/Comment.nvim", opts = {} },
 
@@ -85,5 +92,9 @@ return {
   },
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   { 'ryanoasis/vim-devicons' },
-  { 'github/copilot.vim' }
+  { 'github/copilot.vim' },
+  {
+    "xiyaowong/transparent.nvim",
+    lazy = false,
+  },
 }
