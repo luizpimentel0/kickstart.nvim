@@ -21,6 +21,8 @@ vim.o.clipboard = 'unnamedplus'
 vim.o.breakindent = true
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
+vim.o.autoindent = true
+vim.o.expandtab = true
 -- Save undo history
 vim.o.undofile = true
 
@@ -42,10 +44,10 @@ vim.o.completeopt = 'menuone,noselect'
 vim.opt.list = true
 
 -- require("indent_blankline").setup {
-  --  space_char_blankline = " ",
-   -- show_current_context = true,
-    --show_current_context_start = true,
---}
+--   space_char_blankline = " ",
+--    show_current_context = true,
+--     show_current_context_start = true,
+-- }
 
 vim.o.wrap = false
 
