@@ -21,6 +21,10 @@ vim.o.clipboard = 'unnamedplus'
 vim.o.breakindent = true
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
+vim.o.autoindent = true
+vim.o.smartindent = true
+vim.o.smarttab = false
+vim.o.expandtab  = true
 -- Save undo history
 vim.o.undofile = true
 
@@ -31,7 +35,6 @@ vim.o.smartcase = true
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
 
-
 -- Decrease update time
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
@@ -41,14 +44,11 @@ vim.o.completeopt = 'menuone,noselect'
 
 vim.opt.list = true
 
-require("indent_blankline").setup {
-   space_char_blankline = " ",
-   show_current_context = true,
-    show_current_context_start = true,
-}
-
 vim.o.wrap = false
 
-vim.cmd('colorscheme moonfly')
+vim.cmd('colorscheme poimandres')
 -- I like beautiful colors
 vim.o.termguicolors = true
+
+vim.g.copilot_assume_mapped = true
+
