@@ -32,8 +32,8 @@ nmap('<c-l>', '<c-w>l><esc>', 'Move to right window')
 nmap('<c-j>', '<c-w>j><esc>', 'Move to top window')
 nmap('<c-k>', '<c-w>k><esc>', 'Move to bottom window')
 
-nmap('<C-d>', '<C-d>zz', '')
-nmap('<C-u>', '<C-u>zz', '')
+-- nmap('<C-d>', '<C-d>zz', '')
+-- nmap('<C-u>', '<C-u>zz', '')
 
 -- LazyGit
 nmap('<leader>gg', ':LazyGit<cr>', 'Open LazyGit')

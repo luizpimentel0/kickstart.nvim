@@ -26,7 +26,7 @@ return {
       opts = {
         options = {
           icons_enabled = true,
-          theme = 'poimandres',
+          theme = 'everforest',
           component_separators = '|',
           section_separators = '',
         },
@@ -144,6 +144,15 @@ return {
     -- optionally set the colorscheme within lazy config
     init = function()
       vim.cmd("colorscheme poimandres")
+    end
+  },
+  {
+    'sainnhe/everforest',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.everforest_enable_italic = true
+      vim.cmd.colorscheme('everforest')
     end
   }
 }
